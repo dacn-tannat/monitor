@@ -1,0 +1,12 @@
+modules:
+  http_2xx: # module to inspect http/https endpoints: checks if a URL returns a 2xx (success) status.
+    prober: http
+    timeout: 1m
+    http:
+      method: GET
+      fail_if_not_ssl: false # allow http and https (not ssl required)
+      preferred_ip_protocol: ip4
+      valid_http_versions:
+        - HTTP/1.1
+        - HTTP/2.0
+      no_follow_redirects: false # allow inspect redirect
