@@ -27,3 +27,5 @@ schema_config:
 
 limits_config:
   retention_period: 7d  # Lưu trữ log trong 7 ngày
+
+# docker plugin install grafana/loki-docker-driver:2.9.5 --alias loki --grant-all-permissions
